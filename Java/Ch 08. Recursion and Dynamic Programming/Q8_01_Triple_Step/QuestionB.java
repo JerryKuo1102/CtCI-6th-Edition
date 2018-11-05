@@ -9,7 +9,7 @@ public class QuestionB {
 		Arrays.fill(map, -1);
 		return countWays(n, map);
 	}
-	
+
 	public static int countWays(int n, int[] memo) {
 		if (n < 0) {
 			return 0;
@@ -22,9 +22,9 @@ public class QuestionB {
 			return memo[n];
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		int n = 50;
+		int n = 20;
 		int ways = countWays(n);
 		System.out.println(ways);
 	}
